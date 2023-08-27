@@ -13,19 +13,17 @@ class HomePage extends StatelessWidget {
       backgroundColor: Color(0xff265B6A),
       body: Column(
         children: [
-          Category('Numbers', Color(0xff60C4E0), () {
-            
-          }),
-          Category('Family Members', Color(0xff3B8296), () {
-            
-          }),
-          Category('Colors', Color(0xff14343D), () {
-            
-          }),
-          Category('Phases', Color(0xff050E11), () {
-           
-          })
+          ///Numbers Screen
+          Category('Numbers', Color(0xff60C4E0), () {}),
 
+          ///Family Members Screen
+          Category('Family Members', Color(0xff3B8296), () {}),
+
+          ///Colors Screen
+          Category('Colors', Color(0xff14343D), () {}),
+
+          ///Phases Screen
+          Category('Phases', Color(0xff050E11), () {})
         ],
       ),
     );
