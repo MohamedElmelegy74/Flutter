@@ -1,30 +1,45 @@
 import 'package:flutter/material.dart';
+import 'package:language_app/Screens/numbers_screen.dart';
 import 'package:language_app/components/category_items.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('ToukoApp'),
-        backgroundColor: Color(0xff045E77),
+        backgroundColor: const Color(0xff045E77),
       ),
-      backgroundColor: Color(0xff265B6A),
+      backgroundColor: const Color(0xff265B6A),
       body: Column(
         children: [
           ///Numbers Screen
-          Category('Numbers', Color(0xff60C4E0), () {}),
+          Category(
+              text: 'Numbers',
+              color: const Color(0xff60C4E0),
+              onTop: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const NumbersPage();
+                }));
+              }),
 
           ///Family Members Screen
-          Category('Family Members', Color(0xff3B8296), () {}),
+          Category(
+              text: 'Family Members',
+              color: const Color(0xff3B8296),
+              onTop: () {}),
 
           ///Colors Screen
-          Category('Colors', Color(0xff14343D), () {}),
+          Category(text: 'Colors',
+          color: const Color(0xff14343D),
+          onTop: () {}),
 
           ///Phases Screen
-          Category('Phases', Color(0xff050E11), () {})
+          Category(text: 'Phases',
+          color: const Color(0xff050E11),
+          onTop: () {})
         ],
       ),
     );
