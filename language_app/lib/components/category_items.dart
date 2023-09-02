@@ -9,7 +9,7 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:  onTop, ///we delete () on her to 
+      onTap:  onTop, ///we delete () on her
       child: Container(
         width: double.infinity,
         height: 100,
