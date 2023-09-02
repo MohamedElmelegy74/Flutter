@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 class Category extends StatelessWidget {
   Category({super.key,  this.text, this.color, this.onTop});
 
-   String? text;
+   String? text; 
    Color? color;
-   VoidCallback? onTop;
+   VoidCallback? onTop; ///to click  on text to go other screen clled navigation
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:  onTop, ///we delete () on her
+      onTap:  onTop, ///we delete () her
       child: Container(
         width: double.infinity,
         height: 100,
