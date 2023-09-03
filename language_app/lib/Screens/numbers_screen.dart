@@ -4,48 +4,57 @@ import 'package:language_app/models/number_class.dart';
 
 class NumbersPage extends StatelessWidget {
   NumbersPage({super.key});
-
   final List<Number> numbers = const [
     Number(
         image: 'assets/images/numbers/number_one.png',
         jpName: 'Ichi',
-        enName: 'One'),
+        enName: 'One',
+        sound: 'sounds/numbers/number_one_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_two.png',
         jpName: 'Ni',
-        enName: 'Two'),
+        enName: 'Two',
+        sound: 'sounds/numbers/number_two_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_three.png',
         jpName: 'San',
-        enName: 'Three'),
+        enName: 'Three',
+        sound: 'sounds/numbers/number_three_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_four.png',
         jpName: 'Shi',
-        enName: 'Four'),
+        enName: 'Four',
+        sound: 'sounds/numbers/number_four_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_five.png',
         jpName: 'Go',
-        enName: 'Five'),
+        enName: 'Five',
+        sound: 'sounds/numbers/number_five_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_six.png',
         jpName: 'Roku',
-        enName: 'Six'),
+        enName: 'Six',
+        sound: 'sounds/numbers/number_six_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_seven.png',
         jpName: 'Shichi',
-        enName: 'Seven'),
+        enName: 'Seven',
+        sound: 'sounds/numbers/number_seven_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_eight.png',
         jpName: 'Hachi',
-        enName: 'Eight'),
+        enName: 'Eight',
+        sound: 'sounds/numbers/number_eight_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_nine.png',
         jpName: 'Kyuu',
-        enName: 'Nine'),
+        enName: 'Nine',
+        sound: 'sounds/numbers/number_nine_sound.mp3'),
     Number(
         image: 'assets/images/numbers/number_ten.png',
         jpName: 'Juu',
-        enName: 'Ten'),
+        enName: 'Ten',
+        sound: 'sounds/numbers/number_ten_sound.mp3'),
   ];
 
   @override
@@ -55,20 +64,26 @@ class NumbersPage extends StatelessWidget {
         title: const Text('Numbers'),
         backgroundColor: const Color(0xff045E77),
       ),
-      body: ListView(
-        children: [
-        Items(number:numbers[0]),
-        Items(number:numbers[1]),
-        Items(number:numbers[2]),
-        Items(number:numbers[3]),
-        Items(number:numbers[4]),
-        Items(number:numbers[5]),
-        Items(number:numbers[6]),
-        Items(number:numbers[7]),
-        Items(number:numbers[8]),
-        Items(number:numbers[9]),
-        ],
+      body: ListView.builder(
+        ///like loop but this build wedget when scroll
+
+        itemCount: numbers.length,
+        itemBuilder: (context, index) {
+          return Items(number: numbers[index]);
+        },
       ),
     );
   }
+
+  /// for loop
+  // List<Widget> getList(List<Number> numbers) {
+  //   List<Widget> itemsList = [];
+  //   for (int i = 0; i < numbers.length; i++) {
+  //     itemsList.add(
+  //       Items(number: numbers[i]),
+  //     );
+
+  //   }
+  //   return itemsList;
+  // }
 }

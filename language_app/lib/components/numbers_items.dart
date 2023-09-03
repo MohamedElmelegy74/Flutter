@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:language_app/models/number_class.dart';
+import 'package:audioplayers/audioplayers.dart';
 
-///Refactor numbers itmes page to use it any other pages 
+///Refactor numbers itmes page to use it any other pages
 
 class Items extends StatelessWidget {
   Items({super.key, required this.number});
@@ -36,13 +37,19 @@ class Items extends StatelessWidget {
             ),
           ),
           const Spacer(flex: 1),
-          const Padding(
-            padding: EdgeInsets.only(right: 15),
-            child: Icon(
+          IconButton(
+            onPressed: () {
+              final player = AudioPlayer();
+              player.play(AssetSource(number.sound));
+            },
+            icon: const Icon(
               Icons.play_arrow,
               color: Colors.white,
               size: 30,
             ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(right: 15),
           ),
         ],
       ),
