@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:language_app/Screens/colors.dart';
 import 'package:language_app/Screens/numbers_screen.dart';
 import 'package:language_app/components/category_items.dart';
-
+import 'package:language_app/Screens/family_members_screen.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -29,12 +30,20 @@ class HomePage extends StatelessWidget {
           Category(
               text: 'Family Members',
               color: const Color(0xff3B8296),
-              onTop: () {}),
+              onTop: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return  FamilyMembersPage();
+                  }));
+              }),
 
           ///Colors Screen
           Category(text: 'Colors',
           color: const Color(0xff14343D),
-          onTop: () {}),
+          onTop: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return  ColorsPage();
+                  }));
+          }),
 
           ///Phases Screen
           Category(text: 'Phases',
