@@ -19,7 +19,7 @@ class ColorsPage extends StatelessWidget {
         image: 'assets/images/colors/color_dusty_yellow.png',
         jpName: 'Dasutiierō',
         enName: 'Dusty Yellow',
-        sound: 'sounds/colors/dusty yellow.wav'),
+        sound: 'sounds/colors/dusty_yellow.wav'),
     ItemsModel(
         image: 'assets/images/colors/color_gray.png',
         jpName: 'Gurē',

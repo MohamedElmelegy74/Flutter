@@ -29,7 +29,7 @@ class FamilyMembersPage extends StatelessWidget {
         image: 'assets/images/family_members/family_younger_brother.png',
         jpName: 'Otouto',
         enName: 'Younger brother',
-        sound: 'sounds/family_members/otouto.wav'),
+        sound: 'sounds/family_members/otooto.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_younger_sister.png',
         jpName: 'Roku',
