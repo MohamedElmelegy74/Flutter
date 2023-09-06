@@ -5,21 +5,21 @@ import 'package:language_app/models/items_class.dart';
 class FamilyMembersPage extends StatelessWidget {
   FamilyMembersPage({super.key});
   final List<ItemsModel> familymembers = const [
-    ItemsModel(
+    ItemsModel(///work
         image: 'assets/images/family_members/family_father.png',
         jpName: 'chichioya',
         enName: 'Father',
         sound: 'sounds/family_members/father.wav'),
-    ItemsModel(
+    ItemsModel(///work
         image: 'assets/images/family_members/family_mother.png',
         jpName: 'Hahaoya',
         enName: 'Mother',
         sound: 'sounds/family_members/mother.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_older_brother.png',
-        jpName: 'San',
+        jpName: 'Ani',
         enName: 'Older brother',
-        sound: 'sounds/family_members/older bother.wav'),
+        sound: 'sounds/family_members/older brother.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_older_sister.png',
         jpName: 'Shi',
@@ -45,12 +45,12 @@ class FamilyMembersPage extends StatelessWidget {
         jpName: 'Hachi',
         enName: 'GrandMohter',
         sound: 'sounds/family_members/grand mother.wav'),
-    ItemsModel(
+    ItemsModel(///work 
         image: 'assets/images/family_members/family_son.png',
         jpName: 'Kyuu',
         enName: 'Son',
         sound: 'sounds/family_members/son.wav'),
-    ItemsModel(
+    ItemsModel(///work 
         image: 'assets/images/family_members/family_daughter.png',
         jpName: 'Juu',
         enName: 'Daughter',
