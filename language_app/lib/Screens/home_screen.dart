@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:language_app/Screens/colors.dart';
 import 'package:language_app/Screens/numbers_screen.dart';
+import 'package:language_app/Screens/pharases_screen.dart';
 import 'package:language_app/components/category_items.dart';
 import 'package:language_app/Screens/family_members_screen.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -22,7 +24,7 @@ class HomePage extends StatelessWidget {
               color: const Color(0xff60C4E0),
               onTop: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return  NumbersPage();
+                  return NumbersPage();
                 }));
               }),
 
@@ -31,24 +33,30 @@ class HomePage extends StatelessWidget {
               text: 'Family Members',
               color: const Color(0xff3B8296),
               onTop: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return  FamilyMembersPage();
-                  }));
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return FamilyMembersPage();
+                }));
               }),
 
           ///Colors Screen
-          Category(text: 'Colors',
-          color: const Color(0xff14343D),
-          onTop: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return  ColorsPage();
-                  }));
-          }),
+          Category(
+              text: 'Colors',
+              color: const Color(0xff14343D),
+              onTop: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ColorsPage();
+                }));
+              }),
 
           ///Phases Screen
-          Category(text: 'Phases',
-          color: const Color(0xff050E11),
-          onTop: () {})
+          Category(
+              text: 'Phases',
+              color: const Color(0xff050E11),
+              onTop: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return PharasesPage();
+                }));
+              })
         ],
       ),
     );

@@ -7,55 +7,44 @@ class ColorsPage extends StatelessWidget {
   final List<ItemsModel> colors = const [
     ItemsModel(
         image: 'assets/images/colors/color_black.png',
-        jpName: 'chichioya',
+        jpName: 'Burakku',
         enName: 'Black',
-        sound: 'sounds/family_members/father.wav'),
+        sound: 'sounds/colors/black.wav'),
     ItemsModel(
-        image: 'assets/images/family_members/family_mother.png',
-        jpName: 'Hahaoya',
-        enName: 'Mother',
-        sound: 'sounds/family_members/mother.wav'),
+        image: 'assets/images/colors/color_brown.png',
+        jpName: 'Chairo',
+        enName: 'Brown',
+        sound: 'sounds/colors/brown.wav'),
     ItemsModel(
-        image: 'assets/images/family_members/family_older_brother.png',
-        jpName: 'San',
-        enName: 'Older brother',
-        sound: 'sounds/family_members/older bother.wav'),
+        image: 'assets/images/colors/color_dusty_yellow.png',
+        jpName: 'Dasutiierō',
+        enName: 'Dusty Yellow',
+        sound: 'sounds/colors/dusty yellow.wav'),
     ItemsModel(
-        image: 'assets/images/family_members/family_older_sister.png',
-        jpName: 'Shi',
-        enName: 'Older sister',
-        sound: 'sounds/family_members/older sister.wav'),
+        image: 'assets/images/colors/color_gray.png',
+        jpName: 'Gurē',
+        enName: 'Gray',
+        sound: 'sounds/colors/gray.wav'),
     ItemsModel(
-        image: 'assets/images/family_members/family_younger_brother.png',
-        jpName: 'Go',
-        enName: 'Younger brother',
-        sound: 'sounds/family_members/younger brohter.wav'),
+        image: 'assets/images/colors/color_green.png',
+        jpName: 'Midori',
+        enName: 'Green',
+        sound: 'sounds/colors/green.wav'),
     ItemsModel(
-        image: 'assets/images/family_members/family_younger_sister.png',
-        jpName: 'Roku',
-        enName: 'Younger sister',
-        sound: 'sounds/family_members/younger sister.wav'),
+        image: 'assets/images/colors/color_red.png',
+        jpName: 'Aka',
+        enName: 'Red',
+        sound: 'sounds/colors/red.wav'),
     ItemsModel(
-        image: 'assets/images/family_members/family_grandfather.png',
-        jpName: 'Shichi',
-        enName: 'GrandFather',
-        sound: 'sounds/family_members/grand father.wav'),
+        image: 'assets/images/colors/color_white.png',
+        jpName: 'Shiroi',
+        enName: 'White',
+        sound: 'sounds/colors/white.wav'),
     ItemsModel(
-        image: 'assets/images/family_members/family_grandmother.png',
+        image: 'assets/images/colors/yellow.png',
         jpName: 'Hachi',
-        enName: 'GrandMohter',
-        sound: 'sounds/family_members/grand mother.wav'),
-    ItemsModel(
-        image: 'assets/images/family_members/family_son.png',
-        jpName: 'Kyuu',
-        enName: 'Son',
-        sound: 'sounds/family_members/son.wav'),
-    ItemsModel(
-        image: 'assets/images/family_members/family_daughter.png',
-        jpName: 'Juu',
-        enName: 'Daughter',
-        sound: 'sounds/family_members/daughter.wav'),
-      
+        enName: 'Yellow',
+        sound: 'sounds/colors/yellow.wav'),
   ];
 
   @override
@@ -63,7 +52,7 @@ class ColorsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Colors'),
-        backgroundColor:const Color(0xff045E77),
+        backgroundColor: const Color(0xff045E77),
       ),
       body: ListView.builder(
         ///like loop but this build wedget when scroll
@@ -72,7 +61,7 @@ class ColorsPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Items(
             itemsmodel: colors[index],
-            color:  const Color(0xff14343D),
+            color: const Color(0xff14343D),
           );
         },
       ),

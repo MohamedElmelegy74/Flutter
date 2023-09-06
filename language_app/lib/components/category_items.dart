@@ -4,8 +4,8 @@ class Category extends StatelessWidget {
 
    String? text; 
    Color? color;
-   VoidCallback? onTop; ///to click  on text to go other screen clled navigation
-
+   VoidCallback? onTop; ///to click  on text to go other screen called navigation
+/// use this code in home screen
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
