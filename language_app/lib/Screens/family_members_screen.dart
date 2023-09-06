@@ -22,9 +22,9 @@ class FamilyMembersPage extends StatelessWidget {
         sound: 'sounds/family_members/ani.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_older_sister.png',
-        jpName: 'Shi',
+        jpName: 'Ane',
         enName: 'Older sister',
-        sound: 'sounds/family_members/older sister.wav'),
+        sound: 'sounds/family_members/ane.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_younger_brother.png',
         jpName: 'Go',
