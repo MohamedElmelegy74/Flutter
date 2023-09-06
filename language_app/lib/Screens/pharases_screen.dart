@@ -52,7 +52,7 @@ class PharasesPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return PharasesItem(
             itemsmodel: pharases[index],
-            color: const Color(0xff050E11),
+            color: const Color(0xff14343D),
           );
         },
       ),

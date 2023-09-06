@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
           ///Colors Screen
           Category(
               text: 'Colors',
-              color: const Color(0xff14343D),
+              color: const Color(0xff053B50),
               onTop: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return ColorsPage();
@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
           ///Phases Screen
           Category(
               text: 'Phases',
-              color: const Color(0xff050E11),
+              color: const Color(0xff14343D),
               onTop: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
                   return PharasesPage();

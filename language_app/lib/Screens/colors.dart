@@ -42,7 +42,7 @@ class ColorsPage extends StatelessWidget {
         sound: 'sounds/colors/white.wav'),
     ItemsModel(
         image: 'assets/images/colors/yellow.png',
-        jpName: 'Hachi',
+        jpName: 'Kiiro',
         enName: 'Yellow',
         sound: 'sounds/colors/yellow.wav'),
   ];
@@ -61,7 +61,7 @@ class ColorsPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Items(
             itemsmodel: colors[index],
-            color: const Color(0xff14343D),
+            color: const Color(0xff053B50),
           );
         },
       ),

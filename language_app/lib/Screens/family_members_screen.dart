@@ -32,27 +32,27 @@ class FamilyMembersPage extends StatelessWidget {
         sound: 'sounds/family_members/otooto.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_younger_sister.png',
-        jpName: 'Roku',
+        jpName: 'Imouto',
         enName: 'Younger sister',
         sound: 'sounds/family_members/younger_sister.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_grandfather.png',
-        jpName: 'Shichi',
+        jpName: 'Ojiisan',
         enName: 'GrandFather',
         sound: 'sounds/family_members/grand_father.wav'),
     ItemsModel(
         image: 'assets/images/family_members/family_grandmother.png',
-        jpName: 'Hachi',
+        jpName: 'Sobo',
         enName: 'GrandMohter',
         sound: 'sounds/family_members/grand_mother.wav'),
     ItemsModel(///work 
         image: 'assets/images/family_members/family_son.png',
-        jpName: 'Kyuu',
+        jpName: 'Musuko',
         enName: 'Son',
         sound: 'sounds/family_members/son.wav'),
     ItemsModel(///work 
         image: 'assets/images/family_members/family_daughter.png',
-        jpName: 'Juu',
+        jpName: 'Musume',
         enName: 'Daughter',
         sound: 'sounds/family_members/daughter.wav'),
       
