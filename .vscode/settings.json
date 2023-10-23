@@ -1,0 +1,9 @@
+{
+    "workbench.colorCustomizations": {
+
+     "editor.bracketPairColorization.enabled": true,
+     "editor.guides.bracketPairs":"active"   
+    },
+    "files.autoSave": "afterDelay"
+}
+
