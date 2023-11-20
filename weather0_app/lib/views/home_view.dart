@@ -18,20 +18,21 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: const Text('Weather App'),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return const SearchView();
-                    },
-                  ),
-                );
-              },
-              icon: const Icon(Icons.search))
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const SearchView();
+                  },
+                ),
+              );
+            },
+            icon: const Icon(Icons.search),
+          ),
         ],
       ),
       body: BlocBuilder<GetWeatherCubit, WeatherState>(
@@ -40,13 +41,13 @@ class _HomeViewState extends State<HomeView> {
             return const NoWeatherBody();
           } else if (state is WeatherLoadedState) {
             return WeatherInfoBody(
-              weatherModel: state.weatherModel,
+              weather: state.weatherModel,
             );
           } else {
             return const Center(
               child: Text(
-                'Opps, Try Later',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                'Opps, Try Again',
+                style: TextStyle(fontSize: 20),
               ),
             );
           }
