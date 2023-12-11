@@ -67,6 +67,38 @@ class RegisterPage extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            const Gap(9),
+            CustomTextFild(
+              hintText: 'Password',
+              icon: const Icon(
+                Icons.password,
+                color: Colors.white,
+              ),
+            ),
+            const Gap(9),
+            CustomTextFild(
+              hintText: 'Password',
+              icon: const Icon(
+                Icons.password,
+                color: Colors.white,
+              ),
+            ),
+            const Gap(9),
+            CustomTextFild(
+              hintText: 'Password',
+              icon: const Icon(
+                Icons.password,
+                color: Colors.white,
+              ),
+            ),
+            const Gap(9),
+            CustomTextFild(
+              hintText: 'Password',
+              icon: const Icon(
+                Icons.password,
+                color: Colors.white,
+              ),
+            ),
             // const SizedBox(
             //   height: 20,
             // ),

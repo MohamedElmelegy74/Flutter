@@ -7,7 +7,6 @@ class CustomTextFild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      /*password textfield */
       decoration: InputDecoration(
           enabledBorder: const OutlineInputBorder(
             borderSide: BorderSide(color: Colors.white),
